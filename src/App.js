@@ -18,17 +18,21 @@ function App(){
     setSongs(response.data);
   }
 
- // async function searchSongs(){
-  //  let response = await axios.get('http://127.0.0.1:8000/api/music/');
-  //  let newResponse = response.filter(function(el){
-  //    if((el.title || el.artist || el.album || el. release_date || el.genre).includes(getSongBy)){
- //       return true;
-  //    }
-  //    else{
-   //     return('Not Found')
-   ///   }
-  //  })
-//  }
+ 
+  async function searchSongs(search){
+    console.log(search)
+    debugger
+    let newResponse = songs.filter(function(el){
+      if(el.title.includes(search) || el.artist.includes(search) || el.album.includes(search) || el.release_date.includes(search) || el.genre.includes(search) ){
+        return true;
+      }
+    })
+    
+    
+    setSongs(newResponse)
+
+    
+  }
 
 
 
@@ -36,7 +40,7 @@ function App(){
     <div>
       <NavBar/>
       <MusicTable parentSongs={songs}/>
-      <SearchBar searchSongs={songs}/>
+      <SearchBar searchSongs={searchSongs}/>
   </div>
 );
 }
