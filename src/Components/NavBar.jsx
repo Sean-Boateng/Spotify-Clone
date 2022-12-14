@@ -3,7 +3,9 @@
 const NavBar = (props) => {
     return ( 
         <div>
-            <h2>Spotify</h2>
+            {/* <nav> */}
+                <h2>Spotify</h2>
+            {/* </nav> */}
         </div>
      );
 }

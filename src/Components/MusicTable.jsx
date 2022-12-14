@@ -1,6 +1,6 @@
 const MusicTable = (props) => {
     return ( 
-        <table>
+        <table class="table">
         <thead>
           <tr>
             <th> Title</th>
@@ -12,14 +12,14 @@ const MusicTable = (props) => {
         </thead>
 
         <tbody>
-          {props.parentSongs.map((song) => {
+          {props.parentSongs.map((songs) => {
               return(
-                <tr>
-                  <td>{song.title}</td>
-                  <td>{song.artist}</td>
-                  <td>{song.album}</td>
-                  <td>{song.release_date}</td>
-                  <td>{song.genre}</td>
+                <tr >
+                  <td>{songs.title}</td>
+                  <td>{songs.artist}</td>
+                  <td>{songs.album}</td>
+                  <td>{songs.release_date}</td>
+                  <td>{songs.genre}</td>
                 </tr>
               );
           }
