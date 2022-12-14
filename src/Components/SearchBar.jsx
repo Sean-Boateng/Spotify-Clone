@@ -25,7 +25,7 @@ const SearchBar = (props) => {
     return(
         <form onSubmit ={getSongBy}>
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>Search</label>
-            <input type='string' value ={searchInput} onChange={(song)=>setsearchInput(song.target.value)}/>
+            <input style={{color: 'black'}} type='string' value ={searchInput} onChange={(song)=>setsearchInput(song.target.value)}/>
             <button type='submit' >search</button>
             {/* <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> Artist</label>
             <input type= 'string' value ={artist} onChange={(song)=>setArtist(song.target.value)}/><br/>

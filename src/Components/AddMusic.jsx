@@ -24,19 +24,19 @@ const AddMusic = (props) => {
     return ( 
         <form onSubmit ={addNewSong}>
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>Title</label>
-            <input type='string' value ={title} onChange={(songdetails)=>setTitle(songdetails.target.value )}/><br/>
+            <input  style={{color: 'black'}} type='string' value ={title} onChange={(songdetails)=>setTitle(songdetails.target.value  )}/><br/>
 
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> Artist</label>
-            <input type= 'string' value ={artist} onChange={(songdetails)=>setArtist(songdetails.target.value)}/><br/>
+            <input style={{color: 'black'}} type= 'string' value ={artist} onChange={(songdetails)=>setArtist(songdetails.target.value)}/><br/>
 
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>Album </label>
-            <input type= 'string' value ={album} onChange={(songdetails)=>setAlbum(songdetails.target.value)}/><br/>
+            <input style={{color: 'black'}} type= 'string' value ={album} onChange={(songdetails)=>setAlbum(songdetails.target.value)}/><br/>
             
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>Release_Date </label>
-            <input type='date' value = {release_date} onChange = {(songdetails)=> setReleaseDate(songdetails.target.value)}/><br/>
+            <input style={{color: 'black'}} type='date' value = {release_date} onChange = {(songdetails)=> setReleaseDate(songdetails.target.value)}/><br/>
 
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>Genre </label>
-            <input type= 'string' value ={genre} onChange={(songdetails)=>setGenre(songdetails.target.value)}/><br/>    
+            <input style={{color: 'black'}} type= 'string' value ={genre} onChange={(songdetails)=>setGenre(songdetails.target.value)}/><br/>    
             <button type='submit' >Add</button>
         </form >
      );
